@@ -26,7 +26,7 @@ Using a full-featured RPC framework brings a small latency overhead for local IP
 
 First of all you will need to generate the code stub for the programming language your client will be programmed in. For this you have to use the Protobuf files located in the [protobuf](/protobuf) folder of this repository. There are also needed some base libraries from the official protobuf project. Some IDE addins do already include these, but if they are missing, you can find them for the offically supported languages on [github.com/protocolbuffers/protobuf/releases/](https://github.com/protocolbuffers/protobuf/releases/) in the release assets. In PLCnext FW 2022.0 the protobuf version 3.14 and gRPC version 1.36.4 are used. Copy the ``src/google`` folder from the archive to the folder ``python``.
 
-Further more you will need the Protobuf compiler (protoc) and the language dependent protoc plugin. They are depending on the programming languange your client should be build in and your build system architecture. Follow the Quick Start guides on the official [grpc-website](https://grpc.io/docs/languages/) to get these.
+Further more you will need the Protobuf compiler (protoc) and the language dependent protoc plugin. They are depending on the programming language your client should be build in and your build system architecture. Follow the Quick Start guides on the official [grpc-website](https://grpc.io/docs/languages/) to get these.
 
 We attached an example batch files for C++ to this repository. After the correct preparation of the folder, following the previous steps and adapting the pathes, this builds the C++ service stub for all PLCnext RSC services at once.
 
