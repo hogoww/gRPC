@@ -29,7 +29,7 @@ service IDeviceInfoService
   /// <summary>
   /// Read a list of information
   /// </summary>
-  /// <param name="identifiers">Arry of String for select the items</param>
+  /// <param name="identifiers">Array of String for select the items</param>
   /// <returns>value as <code>RscVariant</code> &gt;on success, <code>RscType::Void</code> on error</returns>
   rpc GetItems(IDeviceInfoServiceGetItemsRequest) returns (IDeviceInfoServiceGetItemsResponse)  {}
 
